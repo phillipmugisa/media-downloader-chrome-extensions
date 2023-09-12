@@ -1,0 +1,56 @@
+<link href="popup.css" rel="stylesheet" type="text/css" />
+<script type="module" src="popup.js"></script>
+
+<div class="ext-container" id="auth">
+  <div class="form-header">
+    <img src="https://ilazy.net/wp-content/uploads/2022/09/newLogoPSD.png" style="inline-size: 40%;aspect-ratio: 2/.8;margin-left: 0.8rem;">
+  </div>
+  <div id="extension-form-area">
+    <form class="popupform">
+      <p class="pro-link" id="popup-error-msg" style="display: none;"></p>
+      <input type="text" placeholder="Username" id="extAuth-username" required>
+      <input type="password" name="password" id="extAuth-password" placeholder="Password" required>
+      <input type="submit" value="Sign In" id="signin" style="cursor: pointer;">
+      <hr style="border-top:1px solid rgb(189, 187, 187);width: 100%;">
+      <a style="cursor: pointer;border: 1px solid lightgray;padding: .5rem 1rem;font-size: .9rem;border-radius: 5px;color: gray;text-align: center;" id="signup-social-extension" >Continue with Google</a>
+      <p>
+        Don't Have An Account
+        <a style="cursor: pointer;" id="signup-extension" class="pro-link">Sign Up</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="ext-container" id="details" style="padding: .75rem 1rem;">
+  <div class="form-header" style="margin: .5rem 0;">
+    <h3 style="padding: .85rem 1rem; color: white;background: #686767;border-radius: 5px;font-size: 16px;font-weight: bold;" class="title" id="popup-intro"></h3>
+  </div>
+  <div style="display: flex; gap: 1rem;align-items: center;margin: .75rem 0;">
+    <span style="font-size: .9rem;">Current Package:</span>
+    <p style="padding: .85rem 1rem; color: white;background: #363636;border-radius: 5px;font-size: .9rem;font-weight: bold;" id="package-area">
+    </p>
+  </div>
+  <div style="display: flex; gap: .5rem;margin: .5rem 0;">
+    <a id="upgradecta" style="cursor: pointer;" class="auth-cta" style="text-decoration: none;">Upgrade</a>
+    <a id="upgradecta" class="show-modal auth-cta" style="cursor: pointer;" style="text-decoration: none;">Guide</a>
+    <button class="auth-cta" id="popup-logout" style="background-color: transparent;color: black;cursor: pointer;">Logout</button>
+  </div>
+</div>
+
+<div class="aliexpress-product-imgs">
+  <div class="upper">
+    <div class="product-area">
+      <div class="main-img"></div>
+      <div class="sub-imags">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="variation-area">
+      
+    </div>
+  </div>
+  <div class="discripion"></div>
+</div>

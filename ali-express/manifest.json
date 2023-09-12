@@ -1,0 +1,28 @@
+{
+    "name": "Aliexpress Free Product Photo Image Video download",
+    "version": "1.0.0",
+    "description": "ilazy gives you control over your time, improves your business abilities, and increases your profit. Install the plugin, sign in, and begin downloading amazon, ebay and aliexpress product's video, photographs, images, and material. Free plan is offered. get you on the rail, and start selling online with the most reputable brands.",
+    "permissions": ["downloads", "tabs", "cookies", "storage"],
+    "host_permissions": ["https://*.aliexpress.com/*", "https://app.ilazy.net/auth/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.aliexpress.com/item/*"],
+        "js": ["contentScript.js"],
+        "css": ["popup.css"],
+        "run_at": "document_end"
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/ext-icon.png",
+        "24": "assets/ext-icon.png",
+        "32": "assets/ext-icon.png"
+      },
+      "default_title": "Aliexpress Free Product Photo Image Video download",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}
