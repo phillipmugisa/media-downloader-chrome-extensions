@@ -458,7 +458,7 @@
                     const formGroup = input.parentNode;
                     const link = document.createElement('a');
                     link.target = `_blank`;
-                    link.href = `${backend_url}package/aliexpress-media-downloader`;
+                    link.href = `${backend_url}package`;
                     link.textContent = '(Go Pro)'
                     link.className = 'pro-link';
                     link.style.color = '#FF4747';
