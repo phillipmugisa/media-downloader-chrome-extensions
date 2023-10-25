@@ -9,7 +9,7 @@ let userFeatures = null;
 
 const checkAuth = async (access_token, refresh_token) => {
     // attempt login using access key
-    let response = await makeRequest("api/subscriptions/aliexpress/", "GET", {"access": access_token});
+    let response = await makeRequest("api/subscriptions/amazon/", "GET", {"access": access_token});
     if (response) {
         // if successful, render download features     
         return response;

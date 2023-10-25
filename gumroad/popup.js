@@ -9,7 +9,7 @@ let userFeatures = null;
 
 const checkAuth = async (access_token, refresh_token) => {
     // attempt login using access key
-    let response = await makeRequest("api/subscriptions/aliexpress/", "GET", {"access": access_token});
+    let response = await makeRequest("api/subscriptions/gumroad/", "GET", {"access": access_token});
     if (response) {
         // if successful, render download features     
         return response;
@@ -40,6 +40,7 @@ const renderDetailsViews = () => {
     extContainerDetails.style.display = "block";
 
     let _data = app.getUserFeatures() ? app.getUserFeatures() : userFeatures;
+    console.log(_data)
 
     document.querySelector("#popup-intro").textContent = `Hello, ${_data['user']['username']}`
     document.querySelector("#package-area").textContent = `${_data['pricing']} Package`

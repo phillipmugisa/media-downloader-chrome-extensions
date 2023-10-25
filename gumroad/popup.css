@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+.ext-component-area * {
+  all: unset;
+  transition: none !important;
+}
+
 .ext-container {
   width: 300px;
   color: #000000;
